@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Rasoul Mirzaei Zadeh Personal Website">
+  <meta name="keywords"
+    content="Rasoul Mirzaei Zadeh, Rasoul Mirzaei, Personal Website, Developer, Designer, Machine Learning">
+  <meta name="author" content="Rasoul Mirzaei Zadeh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rasoul Mirzaei Zadeh</title>
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="plugins/fonts/open-sans.css">
+  <link rel="stylesheet" href="plugins/fontawesome-5.11.2/fontawesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap-4.2.1/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top" onload="setup()">
+  <nav id="left-panel" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand js-scroll-trigger" href="#top">
+      <span id="smallName" class="d-block d-lg-none"></span>
+      <span class="d-none d-lg-block">
+        <img id="profileImg" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" />
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-panel-content"
+      aria-controls="left-panel-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="left-panel-content" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#bio">Biography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+    <section id="about" class="resume-section p-3 p-lg-5 d-flex d-column">
+      <div class="my-auto">
+        <h1 id="name" class="mb-0">
+          <span class="first"></span> <span class="text-b second"></span>
+        </h1>
+        <div class="subheading mb-3">
+          <i class="fas fa-globe-asia"></i> <span id="location"></span>
+          <br />
+          <i class="fas fa-birthday-cake"></i> <span id="age"></span>
+        </div>
+        <p id="description" class="lead mb-5">
+          <span class="description"></span>
+          <br />
+          <br />
+          <span class="quote"></span>
+        </p>
+        <div class="social-icons">
+          <a id="github" target="_blank" rel="noopener noreferrer" class="default-social">
+            <i class="fab fa-github"></i>
+          </a>
+          <a id="dev" target="_blank" rel="noopener noreferrer" class="default-social">
+            <i class="fab fa-dev"></i>
+          </a>
+          <a id="linkedin" target="_blank" rel="noopener noreferrer" class="default-social">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a id="researchgate" target="_blank" rel="noopener noreferrer" class="default-social">
+            <i class="fab fa-researchgate"></i>
+          </a>
+          <a id="goodreads" target="_blank" rel="noopener noreferrer" class="default-social">
+            <i class="fab fa-goodreads"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio" class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <div class="my-auto">
+        <h2 class="mb-5">Biography</h2>
+        <p id="bio-text"></p>
+      </div>
+    </section>
+
+    <section id="education" class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+        <div id="educationContainer"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
+        <div id="experienceContainer"></div>
+      </div>
+    </section>
+
+    <div class="d-none">
+      <div id="credsTemplate" class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-content mr-auto">
+          <h3 class="mb-0"></h3>
+          <div class="subheading mb-3"></div>
+          <p></p>
+          <i class="fas fa-globe-americas"></i> <span class="location"></span>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="date"> </span>
+        </div>
+      </div>
+    </div>
+
+    <section id="skills" class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <div class="my-auto">
+        <h2 class="mb-5 text-center">Skills</h2>
+        <div id="skillsContainer"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="plugins/jquery.min.js"></script>
+  <script src="plugins/bootstrap-4.2.1/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="plugins/jquery.easing.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="data/data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
