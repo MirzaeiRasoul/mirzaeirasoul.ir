@@ -108,10 +108,10 @@ function twoDigitShape(num) {
   });
 
   $(".js-scroll-trigger").click(function () {
-    $(".navbar-collapse").addClass("hide");
+    $(".navbar-content").addClass("hide");
   });
 
   $("body").scrollspy({
-    target: "#left-panel"
+    target: ".navbar"
   });
 })(jQuery);
