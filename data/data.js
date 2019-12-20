@@ -31,7 +31,7 @@ let profile = {
     "Stop planting flowers in peoples yards who aren't going to water them.",
     "If you want to change the world, start off by making your bed.",
     "There are two ways to be happy: change the situation or change your mindset towards it.",
-    "Certain things catch your eye, but pursue only those that capture the heart",
+    "Certain things catch your eye, but pursue only those that capture the heart.",
     "Be thankful for the hard times, for they have made you.",
     "Smile today. Cry tomorrow. (read this every day)",
     "The best way to avoid disappointment is to not expect anything from anyone.",
@@ -142,21 +142,30 @@ let profile = {
   ],
 
   social: {
-    github: "https://github.com/MirzaeiRasoul/",
-    dev: "https://dev.to/mirzaeirasoul",
     linkedin: "https://www.linkedin.com/in/mirzaeirasoul/",
-    researchgate: "https://www.researchgate.net/profile/Rasoul_Mirzaei_Zadeh",
-    goodreads: "https://www.goodreads.com/MirzaeiRasoul"
+    github: "https://github.com/MirzaeiRasoul/",
+    goodreads: "https://www.goodreads.com/MirzaeiRasoul",
+    researchgate: "https://www.researchgate.net/profile/Rasoul_Mirzaei_Zadeh"
   },
 
   experience: [
+    {
+      title: "Partnership",
+      company: "DigikalaNEXT",
+      url: "https://digikalanext.com/",
+      location: "Tehran, Iran",
+      description:
+        "Technology and Innovation Factory.",
+      from: "Dec 2019",
+      to: "Now"
+    },
     {
       title: "Research Assistant",
       company: "University of Zanjan",
       url: "https://maslab.znu.ac.ir/",
       location: "Zanjan, Iran",
       description:
-        "Multi-Agent Systems Laboratory (MASlab).",
+        "Research Assistant in Multi-Agent Systems Laboratory (MASlab), under the guidance of Associate Professor, Mohsen Afsharchi. - With focus in Artificial Intelligence, Machine Learning, and Recommendation Systems.",
       from: "Jun 2018",
       to: "Sep 2019"
     },
@@ -165,7 +174,7 @@ let profile = {
       company: "University of Zanjan",
       url: "http://cv.znu.ac.ir/afsharchim/Software Engineering.htm",
       description:
-        "Teaching assistant for software engineering course, under the guidance of Associate Professor, Dr. Mohsen Afsharchi.",
+        "Teaching assistant for software engineering course, under the guidance of Associate Professor, Mohsen Afsharchi.",
       location: "Zanjan, Iran",
       from: "Sep 2018",
       to: "Dec 2018"
@@ -175,7 +184,7 @@ let profile = {
       company: "SANAY System Development (SANAY CO)",
       url: "en.sanayco.ir",
       description:
-        "Java, Struts2 Framework, SQL-Server, MongoDB",
+        "Develop first exclusive online trading platform of 'Tadbirgaran Farda' brokerage (PRANA Trader) - Work with Java, Struts2 Framework, SQL-Server, MongoDB, HTML, CSS, JavaScript, jQuery, Bootstrap and Other Technologies",
       location: "Zanjan, Iran",
       from: "Mar 2017",
       to: "June 2018"
@@ -185,7 +194,7 @@ let profile = {
       company: "SANAY System Development (SANAY CO)",
       url: "en.sanayco.ir",
       description:
-        "React Native Framework, User Interface Design",
+        "Use React-Native mobile framework for cross-platform mobile development - Design User-Interface (UI) for 'PRANA Trader' mobile application.",
       location: "Zanjan, Iran",
       from: "Nov 2016",
       to: "Mar 2017"
@@ -195,10 +204,10 @@ let profile = {
       company: "Freelancer",
       url: "",
       description:
-        "Android Studio, Gradle, Material Design",
+        "Develop simple android applications with Eclipse IDE - Work with Processing graphical library for android games development - Switch to Material Design language, Android Studio IDE and Gradle build-automation system.",
       location: "Arak, Iran",
-      from: "September 2015",
-      to: "September 2016"
+      from: "Sep 2015",
+      to: "Sep 2016"
     }
   ],
 
@@ -232,27 +241,21 @@ let profile = {
     "JavaScript",
     "jQuery",
     "Bootstrap",
-    "Software Development",
+    "Web Development",
     "Java",
-    "SQL",
+    "Struts-2",
+    "SQL-Server",
+    "Mongo-DB",
+    "Python",
+    "Flask",
     "Mobile Development",
     "Android",
-    "React Native",
+    "React-Native",
     "Artificial Intelligence",
-    "Python",
     "Machine Learning",
+    "Natural Language Processing",
     "Neural Networks",
     "Deep Learning",
-    "Natural Language Processing",
     "Recommendation Systems"
   ],
-};
-
-let page = {
-  theme: "dark"
-  // ^ Themes Suported:
-  // - . default (default)
-  // - . dark
-  // - . blue
-  // - . darkBlue
 };

@@ -30,11 +30,10 @@ function fillTemplate() {
   $("#description").find(".description").text(profile.description);
 
   // Social
-  document.getElementById("github").setAttribute("href", profile.social.github);
-  document.getElementById("dev").setAttribute("href", profile.social.dev);
   document.getElementById("linkedin").setAttribute("href", profile.social.linkedin);
-  document.getElementById("researchgate").setAttribute("href", profile.social.researchgate);
+  document.getElementById("github").setAttribute("href", profile.social.github);
   document.getElementById("goodreads").setAttribute("href", profile.social.goodreads);
+  document.getElementById("researchgate").setAttribute("href", profile.social.researchgate);
 
   document.getElementById("bio-text").innerHTML = profile.bio;
 
