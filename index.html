@@ -110,12 +110,12 @@
       <div class="project-container">
         <div class="row project-item bg-tertiary">
           <div class="col-6 flex-center p-0">
-            <img class="project-desktop-image" src="images/projects/personal-portfolio/banner.png" alt="project-image">
+            <img class="project-desktop-image lozad" data-src="images/projects/personal-portfolio/banner.png" alt="project-image">
             <img class="project-background" src="images/vectors/colored.png" alt="project-background">
           </div>
           <div class="col-6 flex-center p-0">
-            <img class="project-spotlight" src="images/backgrounds/spotlight-tertiary.png " alt="project-background">
-            <img class="project-spotlight shine" src="images/backgrounds/spotlight-shine-tertiary.png " alt="project-background">
+            <img class="project-spotlight lozad" data-src="images/backgrounds/spotlight-tertiary.png " alt="project-background">
+            <img class="project-spotlight shine lozad" data-src="images/backgrounds/spotlight-shine-tertiary.png " alt="project-background">
             <div class="project-info text-light flex-center">
               <h3><b>Personal Portfolio</b></h3>
               <h5>My Personal Website</h5>
@@ -127,8 +127,8 @@
       <div class="project-container pt-5">
         <div class="row project-item bg-secondary">
           <div class="col-6 flex-center">
-            <img class="project-spotlight" src="images/backgrounds/spotlight-secondary.png " alt="project-background">
-            <img class="project-spotlight shine" src="images/backgrounds/spotlight-shine-secondary.png " alt="project-background">
+            <img class="project-spotlight lozad" data-src="images/backgrounds/spotlight-secondary.png " alt="project-background">
+            <img class="project-spotlight shine lozad" data-src="images/backgrounds/spotlight-shine-secondary.png " alt="project-background">
             <div class="project-info text-light flex-center">
               <h3><b>Learn in Home</b></h3>
               <h5>Educational Platform</h5>
@@ -136,7 +136,7 @@
             </div>
           </div>
           <div class="col-6 flex-center">
-            <img class="project-mobile-image" src="images/projects/learn-in-home/banner.png" alt="project-image">
+            <img class="project-mobile-image lozad" data-src="images/projects/learn-in-home/banner.png" alt="project-image">
             <img class="project-background" src="images/vectors/colored.png" alt="project-background">
           </div>
         </div>
@@ -181,7 +181,8 @@
       </div>
     </div>
     <!-- Background -->
-    <img class="footer-section-image" src="images/backgrounds/footer.png" alt="footer-image">
+    <div class="footer-section-background"></div>
+    <img class="footer-section-image lozad" data-src="images/backgrounds/footer.png" alt="footer-image">
     <div class="footer-section-overlay bg-overlay"></div>
   </footer>
   <!-- /Footer -->
@@ -194,6 +195,9 @@
   <!-- GSAP -->
   <script src="plugins/gsap-3.2.6/gsap.min.js"></script>
   <script src="plugins/gsap-3.2.6/SplitText-Alternative.js"></script>
+
+  <!-- Lazy Load Image Plugin -->
+  <script src="plugins/lozad-1.14.0/lozad.min.js"></script>
 
   <!-- Custom Script -->
   <script src="js/common.js"></script>

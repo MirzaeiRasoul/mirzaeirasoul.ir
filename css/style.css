@@ -758,3 +758,12 @@ a:hover {
     width: 70%;
   }
 }
+
+.lozad {
+  opacity: 0;
+}
+
+.lozad.loading {
+  opacity: 1;
+  transition: 0.5s ease;
+}

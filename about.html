@@ -96,6 +96,7 @@
       <span><i class="fas fa-arrow-down"></i></span>
     </div>
     <!-- Background -->
+    <div class="header-section-background"></div>
     <img class="header-section-image" src="images/backgrounds/header.png" alt="header-image">
     <div class="header-section-overlay bg-overlay"></div>
   </section>
@@ -128,7 +129,7 @@
           </div>
         </div>
         <div class="col-xl-5 col-lg-6 col-12">
-          <img class="profile-image rounded w-100" src="images/about/profile.jpg" alt="profile-image">
+          <img class="profile-image rounded w-100 lozad" data-src="images/about/profile.jpg" alt="profile-image">
         </div>
       </div>
     </div>
@@ -155,7 +156,7 @@
           the sea without knowing its destination.</i>”
           Therefore this is a necessary question that you must respond to.
         </p>
-        <img class="process-image w-100" src="images/about/my-process.png" alt="process-image">
+        <img class="process-image w-100 lozad" data-src="images/about/my-process.png" alt="process-image">
 
          <h4 class="section-title mt-4 pt-3">Research</h4>
         <p>Every design process begins with research. As a user experience designer I know that research in the world of UX design means: 
@@ -214,7 +215,7 @@
       <h3 class="section-title">Design Process Overview</h3>
       <div class="section-content">
         <p>In the below diagram, an overview of steps that I follow in my design process are shown.</p>
-        <img class="process-info-image w-100" src="images/about/my-process-info.png" alt="process-info-image">
+        <img class="process-info-image w-100 lozad" data-src="images/about/my-process-info.png" alt="process-info-image">
       </div>
     </div>
   </section>
@@ -256,7 +257,8 @@
       </div>
     </div>
     <!-- Background -->
-    <img class="footer-section-image" src="images/backgrounds/footer.png" alt="footer-image">
+    <div class="footer-section-background"></div>
+    <img class="footer-section-image lozad" data-src="images/backgrounds/footer.png" alt="footer-image">
     <div class="footer-section-overlay bg-overlay"></div>
   </footer>
   <!-- /Footer -->
@@ -268,6 +270,9 @@
 
   <!-- GSAP -->
   <script src="plugins/gsap-3.2.6/gsap.min.js"></script>
+  
+  <!-- Lazy Load Image Plugin -->
+  <script src="plugins/lozad-1.14.0/lozad.min.js"></script>
 
   <!-- Custom Script -->
   <script src="js/common.js"></script>

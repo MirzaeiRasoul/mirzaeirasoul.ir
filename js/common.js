@@ -3,6 +3,16 @@
 
     // Smooth Loader
     gsap.to("body", {autoAlpha: 1, delay: 0.1, duration: 0.4});
+    
+    // Initialize Lozad Library
+    lozad('.lozad', {
+        load: function(el) {
+            el.src = el.dataset.src;
+            el.onload = function() {
+                el.classList.add('loading')
+            }
+        }
+    }).observe()
 
     // Sticky Navbar
     if ($('.navigation').offset().top > 1) { $('.navigation').addClass('nav-bg'); }
