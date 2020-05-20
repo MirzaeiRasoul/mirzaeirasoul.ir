@@ -1,4 +1,5 @@
 var acAnimated = {Plugins: {}};
+
 /* SplitText Plugin - Starts */
 acAnimated.Plugins.SplitText = function(element, options) {
 	if (!options.hasOwnProperty("words")) options.words = 1;
@@ -84,16 +85,19 @@ acAnimated.randomNumber = function(min, max) {
 	var num = min + Math.floor(Math.random() * (max - (min - 1)));
 	return num;
 }
+
 acAnimated.randomDirection = function(number) {
 	var direction = Math.floor(Math.random() * 2);
 	if (direction == 0) number = 0 - number;
 	return number;
 }
+
 acAnimated.animateChar = function(char) {
 	var timeline = new TimelineMax({});
 	timeline.from(char, acAnimated.randomNumber(3, 5) / 10, {top: acAnimated.randomDirection(acAnimated.randomNumber(10, 50)), rotationZ: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), rotationX: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), opacity: 0});
 	return timeline;
 }
+
 acAnimated.animateWord = function(word) {
 	var timeline = new TimelineMax({});
 	timeline.from(word, acAnimated.randomNumber(3, 5) / 10, {top: acAnimated.randomDirection(acAnimated.randomNumber(10, 50)), rotationX: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), opacity: 0});
