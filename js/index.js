@@ -19,15 +19,15 @@
                 {top: -100, autoAlpha: 0},
                 {top: 0, autoAlpha: 1, duration: 1, stagger: 0.1, ease: Back.easeOut,
                     onComplete: function() {
-                        spotlightTimeline.fromTo(".header-section-image.shine", {autoAlpha: 0}, {autoAlpha: 1, duration: 1});
+                        spotlightTimeline.fromTo(".header-section-image.shine", {autoAlpha: 0}, {autoAlpha: 1, duration: 0.9});
                     }
                 }
             );
         });
-        loadTimeline.to(".read-more", {autoAlpha: 1, duration: 0.5});
-        loadTimeline.to(".header-section-social", {autoAlpha: 1, delay: 0.5, duration: 0.25});
+        loadTimeline.to(".read-more", {autoAlpha: 1, duration: 0.4});
+        loadTimeline.to(".header-section-social", {autoAlpha: 1, delay: 0.4, duration: 0.25});
         loadTimeline.to(".header-section-scroll-down", {
-            autoAlpha: 1, delay: 0.25, duration: 0.25,
+            autoAlpha: 1, delay: 0.15, duration: 0.25,
             onComplete: function() {
                 $('.not-loaded').removeClass("not-loaded");
             }

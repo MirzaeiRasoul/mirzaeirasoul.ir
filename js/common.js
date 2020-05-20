@@ -6,11 +6,9 @@
     
     // Initialize Lozad Library
     lozad('.lozad', {
-        load: function(el) {
-            el.src = el.dataset.src;
-            el.onload = function() {
-                el.classList.add('loading')
-            }
+        load: function(item) {
+            item.src = item.dataset.src;
+            item.onload = function() { item.classList.add('loading'); }
         }
     }).observe()
 
@@ -39,5 +37,26 @@
             link.timeline.play();
         });
     });
+
+    // Header Movement Animation
+    function mouseMoveFunc(event) {
+        const percentX = gsap.utils.normalize(0, innerWidth, event.pageX);
+        const percentY = gsap.utils.normalize(0, innerHeight, event.pageY);
+        const maxX = gsap.getProperty(".mousemove-animate", "width") * 0.01;
+        const maxY = gsap.getProperty(".mousemove-animate", "height") * 0.01;
+        gsap.to(".mousemove-animate", {
+            duration: 1,
+            x: percentX * maxX - maxX / 2,
+            y: percentY * maxY - maxY / 2
+        });
+        const spotlightMaxX = gsap.getProperty(".header-section-image", "width") * 0.005;
+        const spotlightMaxY = gsap.getProperty(".header-section-image", "height") * 0.005;
+        gsap.to(".header-section-image", {
+            duration: 1.5,
+            x: percentX * spotlightMaxX - spotlightMaxX / 2,
+            y: percentY * spotlightMaxY - spotlightMaxY / 2,
+        });
+    }   
+    window.addEventListener("mousemove", mouseMoveFunc);
 
 })(jQuery);

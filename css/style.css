@@ -244,6 +244,16 @@ a:hover {
   display: none !important;
 }
 
+/* ----- Lazy Loading ----- */
+.lozad {
+  opacity: 0;
+}
+
+.lozad.loading {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
 /* ----- Beat Animation ----- */
 .beat-animation {
   display: flex;
@@ -459,6 +469,10 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.header-section .header-section-image.shine {
+  transform: scale(1.005);
 }
 
 .header-section .header-section-background {
@@ -757,13 +771,4 @@ a:hover {
   .header-section .case-study-image {
     width: 70%;
   }
-}
-
-.lozad {
-  opacity: 0;
-}
-
-.lozad.loading {
-  opacity: 1;
-  transition: 0.5s ease;
 }
