@@ -1,7 +1,7 @@
 # My Personal Portfolio
 
-miezaeirasoul.ir is my personal portfolio repository. Easily modifiable, hosted by GitHub pages and built using HTML, CSS, Bootstrap, JavaScript and jQuery.
+miezaeirasoul.ir is my personal portfolio repository. Easily modifiable, hosted by GitHub pages and built using HTML, CSS and JavaScript.
 
 [mirzaeirasoul.ir](https://mirzaeirasoul.ir/)
 
-<img src="images/screenshot.png" width="100%"/>
+<img src="screenshot.png" width="100%"/>
