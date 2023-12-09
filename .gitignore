@@ -1,3 +1,4 @@
-# VSCode files #
+# VSCode and Mac files #
 ################
 .vscode
+.DS_Store
